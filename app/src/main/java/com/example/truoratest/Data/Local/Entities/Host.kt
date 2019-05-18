@@ -1,6 +1,7 @@
-package com.example.truoratest.Data.Local
+package com.example.truoratest.Data.Local.Entities
 
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.RawValue
 
 data class Host(
     @SerializedName("host")
@@ -22,7 +23,7 @@ data class Host(
     @SerializedName("criteriaVersion")
     var criteriaVersion: String,
     @SerializedName("endpoints")
-    var endpoints: List<Endpoints> ?= null
+    var endpoints: @RawValue List<Endpoints> ?= null
 )
 
 data class Endpoints(
