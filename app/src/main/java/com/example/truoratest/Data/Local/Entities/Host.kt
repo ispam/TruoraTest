@@ -24,31 +24,6 @@ data class Host(
     @SerializedName("engineVersion")
     var engineVersion: String,
     @SerializedName("criteriaVersion")
-    var criteriaVersion: String,
-    @SerializedName("endpoints")
-    var endpoints: @RawValue List<Endpoints> ?= null
+    var criteriaVersion: String
 ): Parcelable
 
-@Parcelize
-data class Endpoints(
-    @SerializedName("ipAddress")
-    var ipAddress: String,
-    @SerializedName("serverName")
-    var serverName: String,
-    @SerializedName("statusMessage")
-    var statusMessage: String,
-    @SerializedName("grade")
-    var grade: String,
-    @SerializedName("gradeTrustIgnored")
-    var gradeTrustIgnored: String,
-    @SerializedName("hasWarnings")
-    var hasWarnings: Boolean,
-    @SerializedName("isExceptional")
-    var isExceptional: Boolean,
-    @SerializedName("progress")
-    var progress: Long,
-    @SerializedName("duration")
-    var duration: Long,
-    @SerializedName("delegation")
-    var delegation: Long
-): Parcelable

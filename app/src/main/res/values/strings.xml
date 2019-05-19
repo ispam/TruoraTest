@@ -3,4 +3,5 @@
     <string name="dialog_loading">Loading</string>
     <string name="query_empty">Query can\'t be empty</string>
     <string name="empty_extra">Oops! Something wrong happened. Please try again</string>
+    <string name="details_title">Details</string>
 </resources>
