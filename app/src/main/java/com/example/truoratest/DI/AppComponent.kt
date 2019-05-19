@@ -1,5 +1,6 @@
 package com.example.truoratest.DI
 
+import com.example.truoratest.UI.Details.DetailsActivity
 import com.example.truoratest.UI.Home.MainActivity
 import dagger.Component
 import javax.inject.Singleton
@@ -9,4 +10,6 @@ import javax.inject.Singleton
 interface AppComponent {
 
     fun inject (activity: MainActivity)
+
+    fun inject(activity: DetailsActivity)
 }
